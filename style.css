@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--purple-bg);
+}
+
+/* Estilização do header */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 140rem;
+  width: 90%;
+  margin: 6.4rem auto 6.4rem auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  padding-left: 7rem;
+}
+
+.menu li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 100ms;
+}
+
+.menu a:hover {
+  font-weight: 700;
+  border-left: 0.3rem solid var(--green);
+  padding-left: 0.3rem;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  color: var(--white);
+  background-color: var(--dark-bg);
+  padding-left: 2.665rem;
+  height: 4.4rem;
+  width: 23rem;
+  border: none;
+  outline: none;
+}
+
+.search button {
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+  width: 7rem;
+  background-color: var(--button-bg);
+  cursor: pointer;
+}
+
+/* Fim da estilização do header */
+
+/* Estilização da seção principal */
+.main-container {
+  padding-bottom: 6.4rem;
+  border-bottom: 6px solid var(--green);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 140rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  color: var(--button-bg);
+  margin-bottom: 1.6rem;
+}
+
+.container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--white);
+}
+
+.container p:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 700;
+  color: var(--button-bg);
+  margin-top: 2.4rem;
+}
+
+/* Fim de estilização da seção principal */
+
+/* Forma que encontrei para dividir a cor do background*/
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Estilização primeira section de artigos */
+
+.section-container {
+  padding-top: 6.4rem;
+  display: flex;
+  gap: 13rem;
+  max-width: 140rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6.38rem;
+}
+
+.art1 p {
+  margin: 1.6rem 0;
+}
+
+.art2 h3 {
+  margin: 0.8rem 0 0.8rem 0;
+}
+
+.art2 p:nth-child(3) {
+  margin-bottom: 4.85rem;
+}
+
+.section-container h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--purple-bg);
+}
+
+.art2 h3:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+/* Fim de estilização primeira section de artigos */
+
+.last-container {
+  display: flex;
+  gap: 13rem;
+  max-width: 140rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+}
+
+.last-container h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--purple-bg);
+}
+
+.last-container p {
+  margin: 1.6rem 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+@media (max-width:1380px) {
+  .last-container {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .last-container {
+    gap: 3.3rem;
+  }
+}
